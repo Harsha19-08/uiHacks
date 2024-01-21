@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99929335-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+      gtag('config', 'UA-99929335-4')
+
+      var getOutboundLink = function (url) {
+        gtag('event', 'click', {
+          event_category: 'outbound',
+          event_label: url,
+          transport_type: 'beacon',
+          event_callback: function () {}
+        })
+      }
+    </script>
+   
+    
+    <meta property="twitter:image" content="https://neumorphism.io/ogImage.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap"
+      rel="stylesheet dns-prefetch preconnect"
+      crossorigin
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#001f3f" />
+    <meta name="author" content="Adam Giebl, adamgiebl@gmail.com" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="description"
+      content="CSS code generator that will help with colors, gradients and shadows to adapt this new design trend or discover its posibilities."
+    />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Hacking Ui</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1 class="main-heading">UiHacks</h1>
+      <h2>Generate <b>Soft</b>-UI CSS code</h2>
+    </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    
+    
+    </div>
+  </body>
+</html>
